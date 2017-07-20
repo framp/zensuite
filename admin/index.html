@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,600,700' rel='stylesheet' type='text/css'>
+
+  <title>Administration</title>
+
+  <!-- CSS -->
+  <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/static/main.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  
+  
+  <!-- JS -->
+  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="/bower_components/prefixfree/prefixfree.min.js"></script>
+  <script src="/js/staticServices/modernizr.custom.js"></script>
+  <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <!-- IE8 support -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+
+<body>
+  
+  <div class="container-fluid" style="margin-top: 5%">
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4">
+         <div class="container-fluid">  
+            <form class="form-overlay" action="/login" role="form" method="POST">
+
+              <div class="row no-margin">
+                <div class="col-md-6 no-padding">
+                  <a href="https:/auth/facebook" class="btn btn-block btn-facebook">
+                    <i class="fa fa-facebook"></i> Facebook</a>
+                </div>
+                <div class="col-md-6 no-padding">
+                  <a href="https:/auth/google" class="btn btn-block btn-gplus">
+                    <i class="fa fa-google-plus"></i> Google+</a>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="form-group"> 
+                <label for="email">EMAIL</label> 
+                <input type="email" class="form-control" name="username" id="email" placeholder="Email address"> 
+              </div>
+
+              <div class="form-group"> 
+                <label for="phone">PASSWORD</label> 
+                <input type="password" class="form-control" name="password" id="password" placeholder="Password"> 
+              </div>
+
+              <hr> 
+
+              <button class="btn btn-box btn-lg btn-block" type="submit">Login</button> 
+            </form> 
+          </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    if (document.location.host=='zensuite.net' && document.location.protocol=='http:') 
+      $('form').attr('action', 'https:/login');
+  </script>
+</body>
+</html>

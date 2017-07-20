@@ -1,0 +1,295 @@
+/* RESERVATION */
+
+/*Navbar reservation back */
+
+.navbar-back {
+  min-height: 30px;
+}
+.navbar-back .navbar-brand {
+  padding: 15px;
+  font-size: 18px;
+  line-height: 5px;
+  height: 35px;
+  font-size: 12px;
+}
+.navbar-back .navbar-brand img {
+  max-height: 22px;
+}
+/* Tooltip */
+
+.tooltip-inner {
+  max-width: 22em;
+  min-width: 20em;
+  padding: 6px 10px;
+}
+/* Reservation Wizard */
+
+.step-selector {
+  /*background-color: rgb(252, 224, 78);*/
+  background-color: rgb(247, 247, 247);
+  border-top: 3px solid #3E3E3E;
+}
+.step-selector > li > a {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.step-selector > li > a:hover {
+  background: transparent;
+  color: #000;
+}
+/* active steps */
+
+#show-step .step-s-1 {
+  background: #E7E7E7
+}
+#show-step .step-s-2,
+#show-step .step-s-3 {
+  color: black;
+}
+#show-step.show-step-2 .step-s-1,
+#show-step.show-step-3 .step-s-1 {
+  background: none;
+}
+#show-step.show-step-2 .step-s-2 {
+  background: #E7E7E7;
+}
+#show-step.show-step-3 .step-s-3 {
+  background: #E7E7E7;
+}
+#reservation-wizard .step-2,
+#reservation-wizard .step-3 {
+  display: none;
+}
+#show-step.show-step-2 .step-1,
+#show-step.show-step-3 .step-1 {
+  display: none;
+}
+#show-step.show-step-2 .step-2 {
+  display: block;
+}
+#show-step.show-step-3 .step-3 {
+  display: block;
+}
+.accordion {
+  padding: 0px 10px;
+  border-bottom: 1px solid rgb(218, 218, 218);
+  background: rgb(248, 248, 248);
+}
+.accordion .accordion-heading {
+  padding: 14px 0 5px 0;
+}
+.accordion .accordion-body {}
+/* Reservation Summary */
+
+.box-summary {
+  padding: 15px;
+  margin-top: 20px;
+  background: #EEE;
+}
+.box-summary .box-summary-item {
+  padding: 10px;
+  background: rgb(251, 251, 251);
+  border-radius: 3px;
+  margin-bottom: 12px;
+}
+.box-summary .box-divider {
+  margin-top: 2px;
+  margin-bottom: 10px;
+  border: 0;
+  border-top: 1px solid rgb(238, 238, 238);
+}
+.accordion-heading div[class*='col-xs-'] {
+  margin: 5px 0;
+}
+/* reservation content box */
+
+.light-box {
+  background: rgb(249, 249, 249);
+  color: #000;
+  padding: 2em;
+}
+.light-box .row {
+  padding: 3px 0;
+}
+/* reservation credit card box */
+
+.creditCard-box .credit-cards img {
+  opacity: 0.5;
+}
+.creditCard-box .credit-cards img.current-card {
+  opacity: 1;
+}
+input.invalid {
+  border: 2px solid red;
+}
+/* Common */
+
+.has-feedback .form-control-feedback {
+  position: absolute;
+  top: 25px !important;
+  right: 0;
+  display: block;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  margin: -26px 0px;
+}
+
+.has-feedback .form-control-feedback.form-btn {
+  border: 0;
+  background: none;
+  outline: 0;
+}
+/* Cover images */
+
+.flex-embed {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.flex-embed:before {
+  content: "";
+  display: block;
+  width: 100%;
+}
+.flex-embed-default:before {
+  padding-bottom: 50%;
+}
+.flex-embed-preview:before {
+  height: 280px;
+}
+.flex-embed-preview-sm:before {
+  height: 150px;
+}
+.flex-embed-preview-md:before {
+  height: 180px;
+}
+.flex-embed-preview-lg:before {
+  height: 420px;
+}
+.cover-image {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  max-height: 600px;
+}
+/* icons */
+
+i.ico-sm {
+  width: 17px;
+  height: 17px;
+}
+i.ico-md {
+  width: 17px;
+  height: 17px;
+}
+i.ico-sm.men {
+  background: url('../img/reservation/men.png') no-repeat;
+  background-size: 17px 17px;
+  display: inline-block;
+  vertical-align: middle;
+}
+i.ico-sm.children {
+  background: url('../img/reservation/child.png') no-repeat;
+  background-size: 17px 17px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+/* Other days table */
+.table-days-row {
+  text-align: center;
+}
+
+.table-days-row .month {
+  font-size: 0.8em;
+}
+.table-days-row .day {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.table-days-row .date {
+  font-size: 0.8em;
+}
+
+.table-hover>tbody>tr>td.danger:hover, .table-hover>tbody>tr>th.danger:hover, .table-hover>tbody>tr.danger:hover>td, .table-hover>tbody>tr.danger:hover>th {
+  background-color: #CC5353;
+}
+.table>thead>tr>td.danger, .table>tbody>tr>td.danger, .table>tfoot>tr>td.danger, .table>thead>tr>th.danger, .table>tbody>tr>th.danger, .table>tfoot>tr>th.danger, .table>thead>tr.danger>td, .table>tbody>tr.danger>td, .table>tfoot>tr.danger>td, .table>thead>tr.danger>th, .table>tbody>tr.danger>th, .table>tfoot>tr.danger>th {
+  background-color: #E26A6A;
+}
+
+.table-hover>tbody>tr>td.success:hover, .table-hover>tbody>tr>th.success:hover, .table-hover>tbody>tr.success:hover>td, .table-hover>tbody>tr.success:hover>th {
+  background-color: #49B981;
+}
+.table>thead>tr>td.success, .table>tbody>tr>td.success, .table>tfoot>tr>td.success, .table>thead>tr>th.success, .table>tbody>tr>th.success, .table>tfoot>tr>th.success, .table>thead>tr.success>td, .table>tbody>tr.success>td, .table>tfoot>tr.success>td, .table>thead>tr.success>th, .table>tbody>tr.success>th, .table>tfoot>tr.success>th {
+  background-color: #66CC99;
+}
+
+.table-availability .success,
+.table-availability .danger {
+   -webkit-transition: background-color 0.3s ease-in;
+  -moz-transition: background-color 0.3s ease-in;
+  -o-transition: background-color 0.3s ease-in;
+  transition: background-color 0.3s ease-in;
+}
+
+.table-availability .success a {
+  display: none;
+  text-align: center;
+}
+
+.table-availability .success:hover a {
+  display: block;
+}
+
+.table-availability i {
+  color: #fff;
+  font-size: 1.2em;
+}
+
+/* Buttons */
+
+.btn-dark {
+  border-radius: 2px;
+  background: rgb(35, 35, 35);
+  color: #eee;
+}
+.btn-dark:hover,
+.btn-dark:active,
+.btn-dark:focus {
+  background: rgb(45, 45, 45);
+  color: #fff;
+}
+
+/* Admin */
+
+.admin {
+  display: none;
+}
+
+/* Cookie Policy */
+
+.cookie-notify {
+position: absolute;
+z-index: 10000;
+bottom: 0;
+left: 0;
+right: 0;
+width: 100%;
+background-color: #333;
+background-color: rgba(10, 10, 10, 0.85);
+color: #fff;
+padding: 15px 0 10px 0;
+}
+
+.cookie-notify a {
+  color: #eee;
+}
+
+.cookie-notify a:hover {
+  color: #eee;
+}
